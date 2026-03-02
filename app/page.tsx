@@ -612,7 +612,7 @@ export default function App() {
           </div>
           <div className="flex flex-wrap justify-center gap-12 text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
             <span className="hover:text-indigo-600 cursor-pointer transition-colors">
-              Instagram
+              Instagram @instagram
             </span>
             <span className="hover:text-indigo-600 cursor-pointer transition-colors">
               WhatsApp
