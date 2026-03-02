@@ -1,0 +1,35 @@
+datasource db {
+  provider = "mysql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  role      String   @default("student") // student, admin
+  createdAt DateTime @default(now())
+  student   Student?
+}
+
+model Student {
+  id          Int          @id @default(autoincrement())
+  userId      Int          @unique
+  user        User         @relation(fields: [userId], references: [id])
+  fullName    String
+  phone       String
+  level       String // SD, SMP, SMA, Umum
+  enrollments Enrollment[]
+}
+
+model Enrollment {
+  id               Int      @id @default(autoincrement())
+  studentId        Int
+  student          Student  @relation(fields: [studentId], references: [id])
+  subjectName      String
+  registrationDate DateTime @default(now())
+  status           String   @default("pending") // pending, active, completed
+}
