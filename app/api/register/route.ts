@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     }
 
     // 3. Simpan ke database menggunakan transaksi
-    const result = await prisma.$transaction(async (tx) => {
+    const result = await prisma.$transaction(async (tx: any) => {
       // Buat atau cari user
       const user = await tx.user.upsert({
         where: { email },
