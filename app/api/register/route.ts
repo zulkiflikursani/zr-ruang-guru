@@ -14,6 +14,7 @@ export async function POST(request: Request) {
         { status: 400 },
       );
     }
+    console.log("res");
 
     const result = await prisma.$transaction(async (tx: any) => {
       // Buat atau cari user
