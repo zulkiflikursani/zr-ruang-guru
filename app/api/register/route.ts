@@ -1,9 +1,5 @@
 import { NextResponse } from "next/server";
 import { prisma, prisma as PrismaClient } from "../../lib/prisma";
-// 1. Ambil URL secara manual dari environment Node.js
-const databaseUrl = process.env.DATABASE_URL;
-
-// 2. Masukkan ke dalam constructor options
 
 export async function POST(request: Request) {
   try {
@@ -19,7 +15,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // 3. Simpan ke database menggunakan transaksi
     const result = await prisma.$transaction(async (tx: any) => {
       // Buat atau cari user
       const user = await tx.user.upsert({
