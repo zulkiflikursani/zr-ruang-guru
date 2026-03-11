@@ -217,7 +217,7 @@ export default function App() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-52 lg:pb-40 px-6 overflow-hidden">
         <div className="absolute top-0 right-0 -z-10 w-2/3 h-full bg-linear-to-l from-indigo-50/40 to-transparent"></div>
-        <div className="absolute top-40 -left-20 w-[500px] h-[500px] bg-blue-100/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+        <div className="absolute top-40 -left-20 w-125 h-125 bg-blue-100/20 rounded-full blur-[120px] -z-10 animate-pulse"></div>
 
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
           <div className="flex-1 text-center lg:text-left">
@@ -227,7 +227,7 @@ export default function App() {
             </div>
             <h1 className="text-6xl lg:text-[100px] font-black text-slate-900 leading-[0.9] mb-10 tracking-tighter">
               Ubah{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-500 to-indigo-600 bg-[length:200%_auto] animate-pulse">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-600 via-blue-500 to-indigo-600 bg-size-[200%_auto] animate-pulse">
                 Logika
               </span>{" "}
               Jadi{" "}
@@ -243,7 +243,7 @@ export default function App() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
               <a
                 href="#daftar"
-                className="group bg-slate-900 text-white px-12 py-6 rounded-[2rem] font-black text-lg hover:bg-indigo-600 transition-all duration-300 flex items-center justify-center gap-4 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.3)] hover:shadow-indigo-200"
+                className="group bg-slate-900 text-white px-12 py-6 rounded-4xl font-black text-lg hover:bg-indigo-600 transition-all duration-300 flex items-center justify-center gap-4 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.3)] hover:shadow-indigo-200"
               >
                 Daftar Sekarang{" "}
                 <ArrowRight
@@ -251,7 +251,7 @@ export default function App() {
                   className="group-hover:translate-x-2 transition-transform"
                 />
               </a>
-              <button className="bg-white text-slate-700 border-2 border-slate-100 px-12 py-6 rounded-[2rem] font-black text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-4">
+              <button className="bg-white text-slate-700 border-2 border-slate-100 px-12 py-6 rounded-4xl font-black text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-4">
                 <Play size={20} className="fill-slate-700" /> Lihat Silabus
               </button>
             </div>
@@ -272,7 +272,7 @@ export default function App() {
 
           <div className="flex-1 relative w-full max-w-2xl">
             <div className="relative z-10 bg-white p-6 rounded-[3.5rem] shadow-[0_80px_120px_-30px_rgba(0,0,0,0.18)] border border-slate-100 rotate-1 hover:rotate-0 transition-transform duration-700">
-              <div className="bg-[#0F172A] rounded-[2.5rem] p-8 aspect-[4/3] relative overflow-hidden shadow-inner font-mono text-sm leading-relaxed">
+              <div className="bg-[#0F172A] rounded-[2.5rem] p-8 aspect-4/3 relative overflow-hidden shadow-inner font-mono text-sm leading-relaxed">
                 <div className="flex gap-2 mb-8">
                   <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
                   <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
@@ -321,7 +321,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="absolute -bottom-8 -left-8 bg-indigo-600 p-8 rounded-[2rem] shadow-2xl border border-indigo-500/30 hidden md:block">
+            <div className="absolute -bottom-8 -left-8 bg-indigo-600 p-8 rounded-4xl shadow-2xl border border-indigo-500/30 hidden md:block">
               <div className="flex items-center gap-4 text-white">
                 <div className="bg-white/20 p-3 rounded-2xl backdrop-blur-sm">
                   <Terminal size={24} />
@@ -336,7 +336,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="absolute -top-12 -right-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-50 animate-bounce duration-[3000ms] hidden md:block">
+            <div className="absolute -top-12 -right-8 bg-white p-8 rounded-4xl shadow-2xl border border-slate-50 animate-bounce duration-3000 hidden md:block">
               <div className="flex items-center gap-4">
                 <div className="bg-green-100 p-3 rounded-2xl text-green-600">
                   <Award size={24} />
@@ -364,7 +364,7 @@ export default function App() {
             </h2>
             <h3 className="text-5xl lg:text-7xl font-black text-slate-900 leading-tight tracking-tighter">
               Kurikulum Yang{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-600">
                 Presisi.
               </span>
             </h3>
@@ -377,7 +377,7 @@ export default function App() {
                 className="group bg-white p-10 rounded-[3.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-4 flex flex-col"
               >
                 <div
-                  className={`w-16 h-16 rounded-[1.5rem] flex items-center justify-center mb-8 bg-${item.theme}-50 border border-${item.theme}-100`}
+                  className={`w-16 h-16 rounded-3xl flex items-center justify-center mb-8 bg-${item.theme}-50 border border-${item.theme}-100`}
                 >
                   {React.cloneElement(item.icon, { size: 28 } as any)}
                 </div>
@@ -392,7 +392,7 @@ export default function App() {
                     {item.description}
                   </p>
                 </div>
-                <div className="space-y-4 mb-6 flex-grow">
+                <div className="space-y-4 mb-6 grow">
                   {item.modules.map((mod, i) => (
                     <div
                       key={i}
@@ -407,7 +407,7 @@ export default function App() {
                 </div>
 
                 {/* PENAMBAHAN STANDAR KURIKULUM TANPA MENGUBAH FONT */}
-                <div className="mb-8 p-5 bg-slate-50 rounded-[1.5rem] border border-slate-100">
+                <div className="mb-8 p-5 bg-slate-50 rounded-3xl border border-slate-100">
                   <div className="flex items-center gap-2 mb-1.5">
                     <Bookmark size={14} className="text-slate-400" />
                     <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">
@@ -435,7 +435,7 @@ export default function App() {
       <section id="daftar" className="py-40 px-6 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row bg-[#0F172A] rounded-[5rem] overflow-hidden shadow-[0_80px_150px_-30px_rgba(15,23,42,0.4)] relative">
           <div className="flex-1 p-16 lg:p-24 text-white flex flex-col justify-center relative">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-600/20 to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-br from-indigo-600/20 to-transparent pointer-events-none"></div>
             <h2 className="text-5xl lg:text-[80px] font-black mb-10 leading-[0.9] tracking-tighter relative">
               Buka <span className="text-indigo-400">Peluang</span> Karier
               Digital Anda.
@@ -606,7 +606,7 @@ export default function App() {
                 ZR-RUANG ILMU
               </span>
             </div>
-            <p className="text-slate-400 text-sm font-bold uppercase tracking-widest max-w-[200px] leading-relaxed text-center md:text-left">
+            <p className="text-slate-400 text-sm font-bold uppercase tracking-widest max-w-50 leading-relaxed text-center md:text-left">
               Academy of Technology and Software Engineering.
             </p>
           </div>
