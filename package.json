@@ -10,13 +10,11 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@prisma/adapter-mariadb": "^7.4.2",
-    "@prisma/adapter-pg": "^7.4.2",
-    "@prisma/client": "^7.4.2",
+    "@eslint/eslintrc": "^3.3.5",
+    "@prisma/client": "^5.22.0",
     "dotenv": "^17.3.1",
     "lucide-react": "^0.577.0",
-    "next": "16.1.6",
-    "pg": "^8.20.0",
+    "next": "^15.1.0",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
@@ -27,8 +25,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "prisma": "^7.4.2",
+    "eslint-config-next": "^15.1.0",
+    "prisma": "^5.22.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5"
