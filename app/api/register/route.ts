@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma, prisma as PrismaClient } from "../../lib/prisma";
 
 export async function POST(request: Request) {
+  // lalalal
   try {
     // 1. Ambil data dari body request
     const body = await request.json();
